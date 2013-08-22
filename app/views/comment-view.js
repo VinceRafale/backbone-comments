@@ -124,7 +124,7 @@ define(function(require, exports, module){
         clearTimeout( this.timer );
       }
       $(window).off('.'+this.cid);
-      this.$el.slideUp( _.bind(Backbone.View.prototype.remove, this) );
+      Backbone.View.prototype.remove.call(this);
     }
 
   });

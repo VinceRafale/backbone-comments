@@ -24,7 +24,7 @@ define(function(requre, exports, module){
     },
 
     onlogout: function(){
-      window.location.reload();
+
     },
 
     sync: function(method, model, options){

@@ -1,6 +1,5 @@
 define([
-  'test/untaken-spec',
-  'test/collections/taken-spec'
+  'test/app-spec',
 ],function(){
   if( window.mochaPhantomJS ){
     window.mochaPhantomJS.run();

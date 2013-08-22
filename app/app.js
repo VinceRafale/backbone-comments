@@ -47,7 +47,8 @@ define(function(require, exports, module){
     events: {
       'submit form': 'createComment',
       'click .fullscreen': 'toggleFullscreen',
-      'click .sign-in': 'createPersona'
+      'click .sign-in': 'createPersona',
+      'click .logout': 'logout'
     },
 
     toggleFullscreen: function(e){
@@ -82,8 +83,13 @@ define(function(require, exports, module){
       _.each( this.collection.where({ email: model.get('email') }), function(model){
         model.view.enableEditing();
       });
+    },
 
+    logout: function(){
+      navigator.id.logout();
+      window.location.reload();
     }
+
 
   });
 
