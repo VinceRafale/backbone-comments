@@ -4,6 +4,7 @@
   "description": "A small example app for demonstrating the basics of Backbone.js apps.",
   "main": "index.js",
   "dependencies": {
+    "sinon": "~1.7.3"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
