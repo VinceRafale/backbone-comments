@@ -12,7 +12,7 @@ Install local dependencies
 
 Install Grunt
 
-    $ npm install -g grunt
+    $ npm install -g grunt-cli
 
 All client side dependencies are installed with
 [bower](http://twitter.github.com/bower).
